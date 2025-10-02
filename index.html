@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essência Vital — Primeiros Socorros</title>
+  <meta name="description" content="Guia prático de primeiros socorros: engasgo, afogamento, síncope, acidentes, incêndio, alergias, picadas, convulsões, hemorragias e queimaduras." />
+  <style>
+    /* Base */
+    :root{
+      --red:#E63946;
+      --dark:#2B2D42;
+      --bg:#f9f9f9;
+      --card:#ffffff;
+      --maxw:850px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Lato', Arial, sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      background:var(--red);
+      color:#fff;
+      padding:20px;
+      text-align:center;
+    }
+    header h1{margin:0;font-size:2.2rem}
+    header p{margin:6px 0 0;font-style:italic}
+    nav{
+      display:flex;
+      justify-content:space-around;
+      background:var(--dark);
+      padding:8px 6px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      padding:10px 14px;
+      border-radius:6px;
+      font-size:1rem;
+    }
+    nav a:hover{background:var(--red)}
+    .container{
+      width:95%;
+      max-width:var(--maxw);
+      margin:18px auto;
+    }
+    .hero{
+      background:var(--card);
+      padding:20px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    }
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.06);
+    }
+    h2{color:var(--red);margin-top:0}
+    p{line-height:1.6;margin:8px 0}
+    ul{margin:8px 0 8px 20px}
+    ol{margin:8px 0 8px 20px}
+    .note{background:#fff8f8;border-left:4px solid var(--red);padding:10px;border-radius:4px}
+    footer{
+      background:var(--dark);
+      color:#fff;
+      text-align:center;
+      padding:14px;
+      margin-top:20px;
+      font-size:0.95rem;
+      border-top:4px solid rgba(0,0,0,0.05);
+    }
+
+    /* tablet-specific */
+    @media (min-width:600px) and (max-width:1024px){
+      header h1{font-size:2.6rem}
+      nav a{font-size:1.05rem;padding:12px 18px}
+      .hero{padding:24px}
+      .card{padding:22px}
+      h2{font-size:1.6rem}
+      p{font-size:1.05rem}
+    }
+
+    /* small improvements for wider screens */
+    @media (min-width:900px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+
+    /* accessibility: focus */
+    a:focus{outline:3px solid rgba(230,57,70,0.25)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Essência Vital</h1>
+    <p>Informação que salva vidas — guia prático de primeiros socorros</p>
+  </header>
+
+  <nav aria-label="Navegação principal">
+    <a href="#inicio">Início</a>
+    <a href="#artigos">Artigos</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main class="container" id="inicio">
+    <section class="hero card" aria-labelledby="bemvindo">
+      <h2 id="bemvindo">Bem-vindo ao Essência Vital</h2>
+      <p>Este é um guia prático e confiável de primeiros socorros, pensado para leigos e para jovens que desejam saber como agir diante de emergências. As orientações aqui mostram medidas imediatas — sempre que possível, busque suporte médico profissional.</p>
+      <p><strong>Emergência no Brasil:</strong> SAMU - <strong>192</strong> | Bombeiros - <strong>193</strong>. Em outros países, ligue para os números de emergência locais.</p>
+    </section>
+
+    <section id="artigos" class="grid" aria-labelledby="artigos-titulo">
+      <h2 id="artigos-titulo" style="grid-column:1 / -1">Artigos essenciais</h2>
+
+      <!-- 1 Engasgo -->
+      <article class="card" id="engasgo" aria-labelledby="engasgo-h">
+        <h2 id="engasgo-h">Engasgo: como agir rapidamente</h2>
+        <p><strong>Sinais:</strong> incapacidade de falar, tosse fraca ou ausente, face vermelha ou arroxeada, perda de consciência (engasgo total).</p>
+
+        <h3>Procedimento</h3>
+        <ol>
+          <li>Se a vítima consegue tossir com força: incentive a tossir — não interfira.</li>
+          <li>Engasgo parcial com dificuldade severa: peça ajuda e prepare-se para a Manobra de Heimlich.</li>
+          <li>Engasgo total (incapaz de respirar/falar): aplique a Manobra de Heimlich — em pé ou sentado atrás da vítima, faça compressões abdominais rápidas para cima e para dentro, até expelir o corpo estranho.</li>
+          <li>Crianças menores de 1 ano: usar 5 tapinhas interescapulares (bebe sentado de bruços apoiado no antebraço) e 5 compressões torácicas com dois dedos — repita alternando.</li>
+        </ol>
+
+        <p class="note"><strong>Importante:</strong> se a vítima perder a consciência, deite-a cuidadosamente e inicie RCP conforme indicado; chame o serviço de emergência imediatamente.</p>
+      </article>
+
+      <!-- 2 Afogamento -->
+      <article class="card" id="afogamento" aria-labelledby="afogamento-h">
+        <h2 id="afogamento-h">Afogamento: primeiros passos de socorro</h2>
+        <p><strong>Sinais:</strong> dificuldade respiratória, tosse intensa, confusão, inconsciência, cianose (lábios/pele azulados).</p>
+
+        <h3>Procedimento</h3>
+        <ol>
+          <li>Retire a vítima da água com segurança — evite colocar sua própria vida em risco.</li>
+          <li>Cheque responsividade e respiração. Se inconsciente e sem respiração, peça ajuda e inicie RCP imediatamente.</li>
+          <li>Se houver respiração, coloque a vítima em posição lateral de segurança e mantenha aquecida.</li>
+          <li>Mesmo que a vítima pareça recuperar-se, encaminhe-a para avaliação médica — complicações respiratórias podem surgir horas depois.</li>
+        </ol>
+
+        <p class="note">No afogamento, a prioridade é garantir via aérea e oxigenação; chame serviços de emergência o quanto antes.</p>
+      </article>
+
+      <!-- 3 Síncope -->
+      <article class="card" id="sincope" aria-labelledby="sincope-h">
+        <h2 id="sincope-h">Síncope (desmaio)</h2>
+        <p><strong>O que é:</strong> perda breve e reversível da consciência, geralmente por diminuição temporária do fluxo sanguíneo cerebral.</p>
+
+        <h3>O que fazer</h3>
+        <ol>
+          <li>Deite a pessoa e eleve as pernas cerca de 30 cm para favorecer o retorno venoso.</li>
+          <li>Afrouxe roupas apertadas (colarinho, cinto) e garanta ambiente arejado.</li>
+          <li>Se houver vômito, coloque a pessoa em posição lateral segura.</li>
+          <li>Se a pessoa não recuperar a consciência em 1–2 minutos, ou se tiver sinais neurológicos, chame o serviço de emergência.</li>
+        </ol>
+
+        <p class="note">Síncopes recorrentes ou com sinais de alerta (dor torácica, palpitações, fraqueza focal) exigem avaliação médica urgente.</p>
+      </article>
+
+      <!-- 4 Acidente de carro/moto -->
+      <article class="card" id="acidente" aria-labelledby="acidente-h">
+        <h2 id="acidente-h">Acidente de carro/moto — primeiros socorros</h2>
+        <p><strong>Prioridade:</strong> garantir segurança da cena (risco de incêndio, tráfego). Só aproxime-se se for seguro.</p>
+
+        <h3>Passos iniciais</h3>
+        <ol>
+          <li>Acione os serviços de emergência e sinalize o local (triângulo, luzes, avisar outros condutores).</li>
+          <li>Avalie nível de consciência e respiração sem movimentar a coluna cervical.</li>
+          <li>Em motociclistas, NÃO retire o capacete se houver possibilidade de lesão cervical — só remova se for imprescindível para respirar e você souber a técnica correta.</li>
+          <li>Controle hemorragias externas com compressão direta (panos limpos). Se houver suspeita de fraturas, imobilize apenas se souber como; caso contrário, minimize movimentos.</li>
+        </ol>
+
+        <p class="note">Lesões na coluna podem causar paralisias permanentes; preserve a coluna até a chegada do resgate profissional.</p>
+      </article>
+
+      <!-- 5 Incêndio -->
+      <article class="card" id="incendio" aria-labelledby="incendio-h">
+        <h2 id="incendio-h">Incêndio — como agir</h2>
+        <p>Em incêndios, a prioridade é a rápida evacuação e a segurança pessoal. A inalação de fumaça é causa frequente de óbito.</p>
+
+        <h3>Se a vítima inalou fumaça</h3>
+        <ol>
+          <li>Remova a pessoa do local com fumaça para área ventilada e segura.</li>
+          <li>Se inconsciente e sem respiração, inicie RCP e solicite ajuda.</li>
+          <li>Queimaduras: resfrie com água corrente (10–20 minutos) queimaduras de 1º e 2º grau; não use gelo nem pomadas caseiras.</li>
+          <li>Queimaduras extensas ou de 3º grau: cubra levemente com pano limpo e chame imediatamente o resgate.</li>
+        </ol>
+
+        <p class="note">Não tente apagar chamas pessoais com água em certas situações (ex.: óleo em chamas). Role no chão, cubra o rosto e use um cobertor se disponível.</p>
+      </article>
+
+      <!-- 6 Alergia a medicamentos -->
+      <article class="card" id="alergia" aria-labelledby="alergia-h">
+        <h2 id="alergia-h">Alergia a medicamentos</h2>
+        <p>Sintomas variam de leves a graves: urticária, inchaço, dificuldade respiratória, queda de pressão (anafilaxia).</p>
+
+        <h3>Como agir</h3>
+        <ol>
+          <li>Interrompa o medicamento suspeito, se possível.</li>
+          <li>Para reações leves (coceira/urticária pequena): antihistamínico pode ser utilizado se for um tratamento já conhecido; busque orientação médica.</li>
+          <li>Se houver sinais de choque anafilático (dificuldade respiratória, inchaço de face/língua, pressão baixa): aplique adrenalina intramuscular (0,3 mg adulto; 0,15 mg criança — apenas se houver autoinjetor e conhecimento) e acione emergência imediatamente.</li>
+          <li>Deite a pessoa de costas com pernas elevadas se houver hipotensão, mantenha vias aéreas e oxigene quando possível.</li>
+        </ol>
+
+        <p class="note">Anafilaxia é uma emergência — cada minuto conta. Se houver histórico de alergia grave, oriente portar autoinjetor de adrenalina e plano de ação.</p>
+      </article>
+
+      <!-- 7 Picadas de insetos -->
+      <article class="card" id="picadas" aria-labelledby="picadas-h">
+        <h2 id="picadas-h">Picadas de insetos</h2>
+        <p>Reações simples: dor, vermelhidão e inchaço local. Reações graves: dificuldade para respirar, edema generalizado, tontura.</p>
+
+        <h3>Cuidados imediatos</h3>
+        <ol>
+          <li>Remova o ferrão (se houver) raspando com uma lâmina rígida ou cartão — evite espremer.</li>
+          <li>Lave com água e sabão; aplique compressa fria para reduzir edema e dor.</li>
+          <li>Se houver sinais de anafilaxia, aplique medidas como descrito em alergia a medicamentos e chame emergência.</li>
+        </ol>
+
+        <p class="note">Observação por até 24 horas é recomendada se a pessoa tiver alergias conhecidas ou reação extensa.</p>
+      </article>
+
+      <!-- 8 Convulsão -->
+      <article class="card" id="convulsao" aria-labelledby="convulsao-h">
+        <h2 id="convulsao-h">Convulsão — como proceder</h2>
+        <p>Convulsões (crises epilépticas) podem ser assustadoras. A maioria termina em poucos minutos sem danos permanentes se as medidas adequadas forem tomadas.</p>
+
+        <h3>O que fazer</h3>
+        <ol>
+          <li>Proteja a vítima de objetos pontiagudos; afaste móveis.</li>
+          <li>Coloque algo macio sob a cabeça; não segure a pessoa rigidamente.</li>
+          <li>Não coloque objetos na boca; não administre líquidos enquanto durar a crise.</li>
+          <li>Após a crise, coloque a pessoa em posição lateral de segurança para manter via aérea patente e observe respiração.</li>
+          <li>Se a crise durar mais que 5 minutos, houver repetição sem recuperação entre crises, ou se for a primeira ocorrência, acione emergência.</li>
+        </ol>
+
+        <p class="note">Se a pessoa tem histórico de convulsões e plano com medicação de resgate, siga as instruções médicas atuais.</p>
+      </article>
+
+      <!-- 9 Hemorragia -->
+      <article class="card" id="hemorragia" aria-labelledby="hemorragia-h">
+        <h2 id="hemorragia-h">Hemorragia — controle rápido</h2>
+        <p>Hemorragias externas são visíveis; internas podem apresentar palidez, sudorese, tontura e queda da pressão.</p>
+
+        <h3>Hemorragia externa</h3>
+        <ol>
+          <li>Pressão direta: use pano limpo e pressione firmemente sobre o local por vários minutos.</li>
+          <li>Elevação: eleve o membro lesionado acima do nível do coração se não houver fratura evidente.</li>
+          <li>Se sangramento profuso e não controlado, aplique torniquete proximal (apenas se souber usar) e chame emergência imediatamente.</li>
+        </ol>
+
+        <h3>Hemorragia interna (suspeita)</h3>
+        <p>Chamada médica urgente — sinais incluem dor intensa, inchaço abdominal, confusão, pele fria e pálida.</p>
+
+        <p class="note">Perda de sangue significativa é emergência; controle imediato e transporte rápido são fundamentais.</p>
+      </article>
+
+      <!-- 10 Queimaduras -->
+      <article class="card" id="queimaduras" aria-labelledby="queimaduras-h">
+        <h2 id="queimaduras-h">Queimaduras — classificação e conduta</h2>
+        <p>Classificação em resumo: 1º grau (vermelhidão e dor), 2º grau (bolhas, dor intensa), 3º grau (lesão profunda, pele esbranquiçada ou carbonizada).</p>
+
+        <h3>Como proceder</h3>
+        <ol>
+          <li>Remova a fonte de calor e roupas em chamas; lave a queimadura com água corrente morna por 10–20 minutos (evitar gelo).</li>
+          <li>1º grau: analgésico e controle com compressa morna; avaliar evolução.</li>
+          <li>2º grau (pequena área): resfriamento e proteção com curativo estéril; evitar rompimento de bolhas.</li>
+          <li>3º grau ou queimadura extensa: não lave vigorosamente; cubra com pano limpo e chame emergência imediatamente.</li>
+        </ol>
+
+        <p class="note">Não aplique substâncias caseiras (manteiga, pasta de dente). Procure atendimento para queimaduras médias e grandes.</p>
+      </article>
+
+    </section>
+
+    <section id="recursos" class="card" aria-labelledby="recursos-h" style="margin-top:18px">
+      <h2 id="recursos-h">Recursos e recomendações</h2>
+      <ul>
+        <li>Considere cursos básicos de primeiros socorros e RCP reconhecidos por entidades de saúde.</li>
+        <li>Mantenha kit de primeiros socorros acessível e com itens básicos (luvas descartáveis, curativos, compressas, ataduras, tesoura sem ponta).</li>
+        <li>Tenha anotados contatos de emergência e histórico de alergias da família.</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="card" aria-labelledby="contato-h" style="margin-top:18px">
+      <h2 id="contato-h">Contato</h2>
+      <p>Tem dúvida, sugestão ou quer parceria? Escreva para: <a href="mailto:contato@essenciavital.com">contato@essenciavital.com</a></p>
+      <p>Se desejar, posso transformar esses artigos em páginas separadas (URLs individuais) para melhor navegação — diga se quer que eu faça isso também.</p>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Essência Vital — Conteúdo informativo não substitui avaliação médica.</p>
+  </footer>
+</body>
+</html>
